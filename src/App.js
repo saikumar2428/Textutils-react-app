@@ -1,16 +1,16 @@
 // import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
-// import About from './components/About';
+import About from './components/About';
 import Form from './components/Form';
 import Navbar from './components/Navbar';
 import Alert from './components/Alert';
-// import N from './components/N';
-// import H from './components/H';
-// import A from './components/A';
+import N from './components/N';
+import H from './components/H';
+import A from './components/A';
 // import Error from './components/Error';
 
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import { type } from '@testing-library/user-event/dist/type';
 
 function App() {
@@ -67,36 +67,36 @@ function App() {
     //   </Main>
     // </>
 
-    // <>
-    //   {/* <Navbar title='Text Utils' about="About us" /> */}
-    //   {/* <Navbar /> */}
-    //   <Router>
-    //   <Navbar title='Text Utils' mode={mode} toggleMode={toggleMode} />
-    //   <Alert  alert={alert}/>
-    //   <div className="container my-3">
-    //     <Routes>
-    //       <Route path="/about" element={<About />}/>
-    //       <Route path="/" element={<Form heading = "Enter the text:" mode={mode} showAlert={showAlert}/>} />
-    //     </Routes>
-    //   </div>
-    //   </Router>
-    // </>
+    <>
+      {/* <Navbar title='Text Utils' about="About us" /> */}
+      {/* <Navbar /> */}
+      <Router>
+      <Navbar title='Text Utils' mode={mode} toggleMode={toggleMode} />
+      <Alert  alert={alert}/>
+      <div className="container my-3">
+        <Routes>
+          <Route path="/about" element={<About />}/>
+          <Route path="/" element={<Form heading = "Enter the text:" mode={mode} showAlert={showAlert}/>} />
+        </Routes>
+      </div>
+      </Router>
+    </>
 
-<>
-{/* <Navbar title='Text Utils' about="About us" /> */}
-{/* <Navbar /> */}
-{/* <Router> */}
-<Navbar title='Text Utils' mode={mode} toggleMode={toggleMode} />
-<Alert  alert={alert}/>
-<div className="container my-3">
-  {/* <Routes> */}
-    {/* <Route path="/about" element={<About />}/>
-    <Route path="/" element={<Form heading = "Enter the text:" mode={mode} showAlert={showAlert}/>} /> */}
-    <Form heading = "Enter the text:" mode={mode} showAlert={showAlert}/>
-  {/* </Routes> */}
-</div>
-{/* </Router> */}
-</>
+  // <>
+  // {/* <Navbar title='Text Utils' about="About us" /> */}
+  // {/* <Navbar /> */}
+  // {/* <Router> */}
+  // <Navbar title='Text Utils' mode={mode} toggleMode={toggleMode} />
+  // <Alert  alert={alert}/>
+  // <div className="container my-3">
+  //   {/* <Routes> */}
+  //     {/* <Route path="/about" element={<About />}/>
+  //     <Route path="/" element={<Form heading = "Enter the text:" mode={mode} showAlert={showAlert}/>} /> */}
+  //     <Form heading = "Enter the text:" mode={mode} showAlert={showAlert}/>
+  //   {/* </Routes> */}
+  // </div>
+  // {/* </Router> */}
+  // </>
   );
 }
 
