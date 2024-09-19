@@ -35,10 +35,10 @@ export default function Form(props) {
             <h1>{props.heading}</h1>
             <div className="mb-3">
                 <label htmlFor="myBox" className="form-label" >Enter below...</label>
-                <input className="form-control" id="myBox" aria-describedby="emailHelp" value={text} onChange={handleOn} style={{backgroundColor: props.mode === 'dark'?'gray':'light' , color: props.mode === 'dark'?'white':'#042743'}}/>
+                <input className="form-control" id="myBox" aria-describedby="emailHelp" value={text} onChange={handleOn} style={{backgroundColor: props.mode === 'dark'?'#13466e':'light' , color: props.mode === 'dark'?'white':'#042743'}}/>
             </div>
-            <button className="btn btn-primary mx-1" onClick={handleUpClick}>Convert to Uppercase</button>
-            <button className="btn btn-primary mx-1" onClick={handleLowClick}>Convert to Lowercase</button>
+            <button className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
+            <button className="btn btn-primary mx-1 my-1" onClick={handleLowClick}>Convert to Lowercase</button>
         </form>
         </div>
         {/* Word Counter */}
@@ -46,7 +46,7 @@ export default function Form(props) {
             <h1>Your text summary</h1>
             <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} Words, {text.length} Characters</p>
             {/* No of words and letters  */}
-            <p>{0.08 * text.split(" ").length} Minutes taken to read</p>
+            <p>{0.08 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes taken to read</p>
             <h2>Preview:</h2>
             <p>{text.length>0 ? text: "Enter something to preview"}</p>
         </div>

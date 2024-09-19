@@ -85,7 +85,7 @@ Navbar.propTypes = {
 
 Navbar.defaultProps = {
     title: 'Title here...',
-    about: 'About text here...'
+    about: 'About us'
 }
 
 // export default function Navbar(props) {
