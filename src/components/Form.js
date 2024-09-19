@@ -44,7 +44,7 @@ export default function Form(props) {
         {/* Word Counter */}
         <div className="cont my-3" style={{color: props.mode === 'dark'?'white':'#042743'}}>
             <h1>Your text summary</h1>
-            <p>{text.split(" ").length} Words, {text.length} Characters</p>
+            <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} Words, {text.length} Characters</p>
             {/* No of words and letters  */}
             <p>{0.08 * text.split(" ").length} Minutes taken to read</p>
             <h2>Preview:</h2>

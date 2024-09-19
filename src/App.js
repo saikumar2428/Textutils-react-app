@@ -5,9 +5,9 @@ import About from './components/About';
 import Form from './components/Form';
 import Navbar from './components/Navbar';
 import Alert from './components/Alert';
-import N from './components/N';
-import H from './components/H';
-import A from './components/A';
+// import N from './components/N';
+// import H from './components/H';
+// import A from './components/A';
 // import Error from './components/Error';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
