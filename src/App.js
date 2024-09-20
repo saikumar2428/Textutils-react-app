@@ -21,7 +21,7 @@ function App() {
       setMode('dark');
       document.body.style.backgroundColor = '#042743';
       showAlert("Dark Mode is enabled", "Success")
-      document.title = 'TextUtils - Home (Dark Mode)';    // changes document title according to the Dark mode
+      document.title = 'TextUtils - Home';    // changes document title according to the Dark mode
     }
     else{
       setMode('light');
@@ -75,8 +75,9 @@ function App() {
       <Alert  alert={alert}/>
       <div className="container my-3">
         <Routes>
-          <Route path="/about" element={<About mode={mode} />}/>
           <Route path="/" element={<Form heading = "Enter the text:" mode={mode} showAlert={showAlert}/>} />
+          <Route path="/about" element={<About mode={mode} />}/>
+          <Route path="*" element={<Form heading="Enter the text:" mode={mode} showAlert={showAlert} />} />
         </Routes>
       </div>
       </Router>
